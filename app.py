@@ -25,7 +25,7 @@ def profile(name):
 		return render_template('index.html', name=new_name)
 	else:
 		new_name = '    Please create an account ' + str(name) 
-		return render_template('index.html', name=name)
+		return render_template('index.html', name=new_name)
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
