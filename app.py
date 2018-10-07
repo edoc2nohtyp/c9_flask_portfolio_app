@@ -16,12 +16,12 @@ def home_page():
 @app.route('/<name>')
 def profile(name):
 	members = ['jørgen', 'lisa', 'benny', 'søren', 'sigurd','martin']
-	viplist = ['lucky luke', 'bennys badekar', 'number five']
+	secret_key = ['lucky luke', 'number five']
 	if name in members:
-		new_name = 'Welcome ' + str(name)
+		new_name = str(name) + ' is loged in'
 		return render_template('index.html', name=new_name)
-	elif name in viplist:
-		new_name = str(name) + 'and the green frog is here'
+	elif name in secret_key:
+		new_name = ' the green frog is here'
 		return render_template('index.html', name=new_name)
 	else:
 		return render_template('index.html', name=name)
