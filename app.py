@@ -19,7 +19,7 @@ def profile(name):
 		new_name = 'princess ' + str(name)
 		return render_template('index.html', name=new_name)
 	elif name=='Jesper':
-		new_name = 'super' + str(name)
+		new_name = str(name) + 'with the grey hair'
 		return render_template('index.html', name=new_name)
 	else:
 		return render_template('index.html', name=name)
