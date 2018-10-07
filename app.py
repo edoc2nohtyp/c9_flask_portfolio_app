@@ -15,7 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	if name=='Nikkie' or 'Kinga':
+	if name=='Nikkie' or name=='Kinga':
 		new_name = 'princess ' + str(name)
 		return render_template('index.html', name=new_name)
 	elif name=='Jesper':
