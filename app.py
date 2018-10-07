@@ -15,8 +15,14 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	new_name = 'super ' + str(name) + ' er ankommet til siden, Hurrae'
-	return render_template('index.html', name=new_name)
+	if name=='Nikkie' or 'Kinga':
+		new_name = 'princess ' + str(name)
+		return render_template('index.html', name=new_name)
+	elif name=='Jesper':
+		new_name = 'super' + str(name)
+		return render_template('index.html', name=new_name)
+	else:
+		return render_template('index.html', name=name)
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
