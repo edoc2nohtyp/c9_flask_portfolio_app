@@ -286,8 +286,9 @@ section.success {
 .floating-label-form-group-with-focus label {
   color: #18BC9C;
 }
-form .row:first-child .floating-label-form-group {
+.row {
   border-top: 1px solid #eeeeee;
+  align-content: baseline;
 }
 footer {
   color: white;
