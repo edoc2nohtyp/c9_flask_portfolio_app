@@ -288,7 +288,7 @@ section.success {
 }
 .row {
   border-top: 1px solid #eeeeee;
-  align-content: baseline;
+   inset-inline: auto;
 }
 footer {
   color: white;
