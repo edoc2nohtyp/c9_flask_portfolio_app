@@ -19,7 +19,7 @@ body {
   font-size: 100px;
 }
 
- #clip {
+#clip {
   position: absolute;
   opacity: 0.8;
   clip: rect(auto, auto, 600px, auto);
