@@ -520,3 +520,7 @@ fieldset[disabled] .btn-success.active {
 div#maincontent {
   outline: none;
 }
+
+.rock-bottom {
+  margin-bottom: 0, Auto;
+}
