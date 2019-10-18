@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-.centered_text p {
+.centered_text {
   position: absolute;
   top: 85px;
   left: 46%;  /* top + left at same time, makes centering possible  */
