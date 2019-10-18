@@ -3,7 +3,7 @@
 
 <head>
 {% block head %}
-    <style media="screen">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +32,33 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <style media="screen">
 
+    body { background-color: black;}
+
+    body div { margin: auto;}
+
+    .container {
+      position: relative;
+    }
+    .centered_text {
+      position: absolute;
+      top: 85px;
+      left: 46%;  /* top + left at same time, makes centering possible  */
+      transform: translate(-50%, -50%);
+      color: lightblue;
+      font-weight: 1;
+      font-family: 'Fredericka the Great', cursive;
+      font-size: 100px;
+    }
+
+    #clip {
+      position: absolute;
+      opacity: 0.8;
+      clip: rect(auto, auto, 600px, auto);
+       /* opacity/ transparency get bigger the clocer to zero, and one is equal to original image.  /*
+      /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */}
+    </style>
 </head>
 
 <body id="page-top" class="index">

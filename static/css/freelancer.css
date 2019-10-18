@@ -8,23 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-.centered_text {
-  position: absolute;
-  top: 85px;
-  left: 46%;  /* top + left at same time, makes centering possible  */
-  transform: translate(-50%, -50%);
-  color: lightblue;
-  font-weight: 1;
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 100px;
-}
-
-#clip {
-  position: absolute;
-  opacity: 0.8;
-  clip: rect(auto, auto, 600px, auto);
-}
-
 p {
   font-size: 20px;
 }
