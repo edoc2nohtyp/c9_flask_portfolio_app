@@ -15,17 +15,10 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	members = ['jørgen', 'lisa', 'benny', 'søren', 'sigurd','martin']
-	secret_key = ['lucky luke', 'number five']
-	if name in members:
-		new_name = str(name) + ' is loged in'
+	if name:
+		new_name = 'Hello ' str(name) + ', fell free to have a look at my work!'
 		return render_template('index.html', name=new_name)
-	elif name in secret_key:
-		new_name = ' the green frog is here'
-		return render_template('index.html', name=new_name)
-	else:
-		new_name = '    Please create an account ' + str(name) 
-		return render_template('index.html', name=new_name)
+
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
