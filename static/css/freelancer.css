@@ -32,9 +32,7 @@ p.small {
   font-size: 16px;
 }
 
-.container div {
-  height: 60px;
-  display: inline-block;
+.container {
   position: relative;
 }
 
