@@ -8,6 +8,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 p {
   font-size: 20px;
 }
@@ -84,7 +86,7 @@ header img {
   display: block;
   margin: 0 auto 20px;
 }
-header .intro-text .name {
+header .intro-text .output {
   display: block;
   font-family: 'Fredericka the Great', cursive;
   font-weight: 700;
