@@ -90,8 +90,9 @@ header .intro-text .output {
   display: block;
   font-family: 'Fredericka the Great', cursive;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 26px;
 }
+
 header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
