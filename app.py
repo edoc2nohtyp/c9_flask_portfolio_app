@@ -15,9 +15,11 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	if name:
+	if name != 'None':
 		new_name = 'Hello ' + str(name) + ', fell free to have a look at my work!'
-		return render_template('index.html', name=new_name)
+    else:
+        new_name = 'Hello, fell free to have a look at my work!'
+	return render_template('index.html', name=new_name)
 
 
 
